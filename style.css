@@ -1,0 +1,449 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a {
+    font-family: "Work Sans", sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.bg-color {
+    background: #f4f6ff;
+}
+/***********Start Header-section**********/
+.my-header {
+    background: #fff;
+}
+.my-header img {
+    width: 45px;
+    position: relative;
+    top: -3px;
+    right: 5px;
+}
+.my-header .navbar-brand {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+ul.my-menu {
+}
+ul.my-menu li {
+}
+ul.my-menu li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: #010101;
+    font-size: 16px;
+    font-weight: 400;
+}
+ul.my-menu li a:hover {
+}
+/*Start Dropdown-Menu */
+ul.my-menu li {
+    position: relative;
+}
+ul.my-menu li ul {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    background: #fafafa;
+    width: 250px;
+    list-style: none;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+ul.my-menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+ul.my-menu li ul li {
+}
+ul.my-menu li ul li a {
+}
+/*End Dropdown-Menu */
+
+.header-button a {
+    background: #fff !important;
+    color: #6278df;
+    border: 2px solid #6278df !important;
+    width: 120px;
+    position: relative;
+    z-index: 1;
+}
+.header-button a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    color: #ffffff;
+    background: #6278df;
+    border-color: #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+    transition: 0.2s;
+    z-index: -1;
+}
+.header-button a:hover::after {
+    width: 100%;
+}
+/***********End Header-section**********/
+
+/***********Start Banner-section**********/
+.banner-section {
+    background: url(img/mbr-10.jpg) no-repeat center center;
+    padding: 160px 0;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.5;
+    z-index: -1;
+}
+.banner-section h4 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 300;
+}
+.banner-section h5 {
+    font-size: 44px;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.banner-caption .form-control {
+    padding: 12px 0;
+    border: 1px solid #5ba533;
+}
+.banner-caption .form-control:focus {
+    border-color: #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+.banner-caption .btn {
+    padding: 12px 0;
+    background: #5ba533;
+    color: #fff;
+    font-weight: bold;
+    border-color: #5ba533;
+    transition: 0.1;
+}
+.banner-caption .btn:hover {
+    border: 1px solid #6278df;
+    color: #6278df;
+    background: #fff;
+    box-shadow: 3px 3px 27px -3px #6278df;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+/***********End Banner-section**********/
+
+/***********Start Number Counter sectoin**********/
+.iteam h4 {
+    color: #000000;
+    font-size: 60px;
+}
+.iteam p {
+    color: #767676;
+    font-size: 23px;
+}
+/***********End Number Counter sectoin**********/
+
+/***********Start Goals sectoin**********/
+.goals-content {
+    position: relative;
+    top: 30%;
+}
+.goals-content h4 {
+    color: #000000;
+    font-size: 42px;
+}
+.goals-content p {
+    font-size: 20px;
+    color: #232323;
+    padding: 20px 0;
+}
+/***********End Goals sectoin**********/
+
+/***********Start About sectoin**********/
+.about-content h2 {
+    color: #000000;
+    font-size: 42px;
+}
+.about-content p {
+    color: #767676;
+    font-size: 23px;
+    font-weight: 300;
+}
+.about-img a {
+    position: relative;
+    display: block;
+}
+.about-img a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #6279dfa1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.about-img a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/***********End About sectoin**********/
+
+/***********Start feture sectoin**********/
+.feture-iteam {
+    height: 280px;
+    transition: 0.4s;
+}
+.feture-iteam:hover {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.iteam-img {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.iteam-img img {
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    position: relative;
+    left: -73px;
+}
+.iteam-content {
+    width: 60%;
+    padding: 25px;
+}
+.iteam-content h3 {
+    font-size: 20px;
+    color: #000;
+}
+.iteam-content p {
+    font-size: 16px;
+    color: #767676;
+    position: relative;
+    top: 12px;
+    font-weight: 300;
+}
+/***********End feture sectoin**********/
+
+/***********Start pricing sectoin**********/
+.pricing-iteam {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    transition: 0.3s;
+}
+.pricing-iteam:hover {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.3);
+}
+.pricing-iteam h2 {
+    color: #000000;
+    font-size: 40px;
+}
+.pricing-iteam p {
+    color: #767676;
+    font-size: 20px;
+    padding: 7px;
+    font-weight: 300;
+}
+.pricing-iteam ul {
+    list-style: none;
+    padding: 0;
+}
+.pricing-iteam ul li {
+    color: #767676;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 0;
+}
+.pricing-iteam ul li span {
+    margin-right: 20px;
+    font-size: 25px;
+    color: #6278df;
+}
+.pricing-button {
+    padding: 20px 0;
+}
+.pricing-button a {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.3);
+    border: 0;
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    color: #6278df;
+    transition: 0.3s;
+}
+.pricing-iteam:hover .pricing-button a {
+    background: #6278df;
+    color: #fff;
+}
+/***********End pricing sectoin**********/
+
+/***********Start application sectoin**********/
+.about-content span {
+    font-size: 5.5rem;
+    color: #ccc;
+    opacity: 0.5;
+}
+.User-iteam {
+    width: 200px;
+    margin: auto;
+    padding: 30px 0;
+}
+.User-iteam img {
+    width: 70px;
+    margin-right: 20px;
+}
+.user-content {
+    text-align: left;
+    position: relative;
+    top: 11px;
+}
+.user-content h2 {
+    color: #000000;
+    font-size: 20px;
+}
+.user-content p {
+    color: #767676;
+    font-size: 16px;
+    position: relative;
+    top: -5px;
+}
+/***********Start application sectoin**********/
+
+/***********Start team sectoin**********/
+.team-heading h2 {
+    color: #000000;
+    font-size: 44px;
+}
+.team-content p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+}
+.team-member-details {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.3);
+    padding: 20px;
+}
+.member-img {
+}
+.member-img img {
+    width: 135px;
+    height: auto;
+    margin-top: -92px;
+}
+.member-bio {
+    padding: 30px 10px;
+    margin-top: 15px;
+}
+.member-bio h5 {
+    color: #000000;
+    font-size: 20px;
+}
+.member-bio h6 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+}
+.member-bio p {
+    color: #767676;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.member-bio a {
+    color: #465052;
+    font-weight: 700;
+    border: 0;
+    transition: 0.4s;
+}
+.member-bio a:hover {
+    background-color: #465052;
+    color: #ffffff;
+}
+/***********End team sectoin**********/
+
+/***********Start Contact sectoin**********/
+.contact-iteam {
+}
+.contact-iteam h2 {
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.contact-iteam input {
+    padding: 20px;
+    font-size: 20px;
+}
+.contact-iteam textarea {
+    font-size: 20px;
+    padding: 20px 27px;
+}
+.contact-iteam a {
+    font-size: 22px;
+    font-weight: bold;
+    background: #6278df !important;
+    border-color: #6278df !important;
+    padding: 10px 22px;
+    transition: 0.4s;
+}
+.contact-iteam a:hover {
+    color: #6278df;
+    background: #fff !important;
+    border-color: #6278df !important;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+/***********End Contact sectoin**********/
+
+/***********Start app sectoin**********/
+.app-download {
+}
+.app-download a {
+    width: 70%;
+    padding: 13px 0;
+    border-color: #5ba533;
+    color: #5ba533;
+}
+.app-download a:hover {
+    color: #ffffff;
+    background: #5ba533;
+    border-color: #5ba533;
+    box-shadow: 3px 3px 27px -3px #5ba533;
+}
+.appppp1 {
+    margin-right: ;
+    text-align: right;
+}
+.appppp2 {
+    text-align: left;
+}
+.footer p {
+    color: #000000;
+    font-size: 20px;
+}
+/***********End app sectoin**********/
